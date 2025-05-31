@@ -1,0 +1,390 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8f4;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7b1e22;
+  padding: 20px;
+  color: white;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: 'Great Vibes', cursive;
+  font-style: normal;
+}
+
+.menu a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ddd;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* SEÇÕES */
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 0px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #7b1e22;
+}
+
+/* TÍTULOS ESTILIZADOS */
+.titulo-estilizado {
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #7b1e22;
+  margin-bottom: 30px;
+}
+
+/* CARROSSEL */
+.secao-carrossel {
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.carrossel-container {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 20px;
+  overflow: hidden; /* vai mudar no mobile */
+}
+
+.carrossel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrossel-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  transition: transform 0.5s ease-in-out;
+  scroll-snap-align: center;
+  padding-left: 0px;
+  scroll-behavior: smooth;
+}
+
+.carrossel .produto {
+  width: 250px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.carrossel-botao {
+  background-color: #7b1e22;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+}
+
+.carrossel-botao:hover {
+  background-color: #5e1518;
+}
+
+.carrossel-anterior {
+  left: 10px;
+}
+
+.carrossel-proximo {
+  right: 10px;
+}
+
+/* VINHOS DESTAQUE */
+.secao-vinhos-destaque .produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.secao-vinhos-destaque .produto, .carrossel .produto {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  flex-shrink: 0;
+}
+
+.secao-vinhos-destaque .produto img, .carrossel .produto img {
+  max-width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+.secao-vinhos-destaque .produto button, .carrossel .produto button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.secao-vinhos-destaque .produto button:hover, .carrossel .produto button:hover {
+  background-color: #218838;
+}
+
+/* AVALIAÇÕES */
+.secao-avaliacoes h2, .secao-instagram h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #7b1e22;
+}
+
+.grid-avaliacoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.avaliacao {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avaliacao img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.avaliacao cite {
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* INSTAGRAM */
+.secao-instagram .grid-instagram {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.secao-instagram .grid-instagram img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+  background-color: #7b1e22;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Whatsapp Button */
+.whatsapp-button-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E;
+}
+
+/* Footer Social Icons */
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .footer-social-icons {
+  margin-top: 10px;
+}
+
+footer .footer-social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer .footer-social-icons img {
+  width: 30px;
+  transition: transform 0.3s;
+}
+
+footer .footer-social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu a {
+    margin: 5px 0;
+  }
+
+  .social-icons {
+    margin-top: 5px;
+  }
+
+  /* === CARROSSEL MOBILE MELHORADO === */
+  .carrossel-container {
+    overflow: visible !important; /* evita corte das imagens */
+  }
+
+  .carrossel-wrapper {
+    display: flex;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 10px;
+  }
+
+  .carrossel-wrapper::-webkit-scrollbar {
+    display: none; /* esconde scrollbar */
+  }
+
+  .carrossel .produto {
+    flex: 0 0 auto;
+    width: 80vw; /* largura responsiva, evita corte */
+    margin-right: 10px;
+    scroll-snap-align: center;
+  }
+
+  .carrossel-botao {
+    display: none; /* esconde botões no mobile */
+  }
+
+  /* Ajustes responsivos normais */
+  .secao-vinhos-destaque .produtos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secao-vinhos-destaque .produto {
+    width: 80%;
+  }
+
+  .grid-avaliacoes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avaliacao {
+    width: 90%;
+  }
+
+  .secao-instagram .grid-instagram {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secao-instagram .grid-instagram img {
+    width: 90%;
+    height: auto;
+  }
+
+  footer .footer-content {
+    align-items: center;
+  }
+
+  footer .footer-social-icons {
+    margin-top: 10px;
+  }
+}
